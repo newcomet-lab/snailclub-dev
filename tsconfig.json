@@ -19,7 +19,6 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/Layout/Header.js"
   ],
   "exclude": ["node_modules"]
 }

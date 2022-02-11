@@ -1,0 +1,271 @@
+/*----------------------------------------------------------------------
+   Mobile Devices
+------------------------------------------------------------------------*/
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+	br{
+		display: none;
+	}
+	.sitecontainer{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.header{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 15px;
+	}
+	.header .logo img{
+		width: 60px;
+	}
+	.header .logo{
+		width: 20%;
+	}
+	.header .menus{
+		width: 80%;
+		padding-top: 10px;
+	}
+	.header .menus .wallet{
+		font-size: 13px;
+		width: 136px;
+		margin-right: 15px;
+		padding: 2px 0;
+	}
+	.header .menus .hamburgermenu{
+		width: 32px;
+	}
+
+	.herobanner {
+		background-image: url('../images/welcomemob.png');
+		padding-bottom: 0;
+	}
+	.herobanner .sitecontainer{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.herobanner .col-md-12{
+		padding-left: 0;
+		padding-right: 0;		
+	}
+	.herobanner .welcomeconteent{
+		padding-top: 45px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 180px;
+	}
+	.herobanner .welcomeconteent .content{
+		width: 100%;
+		position: relative;
+	}
+	.herobanner .welcomeconteent .content h1{
+		font-size: 30px;
+		line-height: 37px;
+		width: 70%;
+		text-align: right;
+		float: right;
+	}
+	.herobanner .welcomeconteent .content p{
+		font-size: 16px;
+		float: left;
+		width: 100%;
+	}
+	.herobanner .welcomeconteent .image{
+		width: 100%;
+	}
+	.herobanner .welcomeconteent .image img {
+		width: 75%;
+		position: absolute;
+		left: -112px;
+		top: 70px;
+	}
+	.herobanner .weelcomeslider{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.herobanner .weelcomeslider .item img{
+		height: 250px;
+	}
+	.hamburgertoggle{
+		top: 80px;
+		padding: 20px 0;
+	}
+	.hamburgertoggle ul li a{
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+
+
+	.snailgame{
+		margin-top: 0;
+		padding-top: 30px;
+	}
+	.sectionheading h2{
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.snailgame .snailgamecontent{
+		padding-top: 20px;
+	}
+	.snailgame .snailgamecontent .topside .leftside{
+		width: 60%;
+	}
+	.snailgame .snailgamecontent .topside .rightside{
+		width: 40%;
+		padding-left: 15px;
+	}
+	.snailgame .snailgamecontent .imageitems .item{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 25px;
+		margin-top: 30px;
+	}
+	.snailgame .snailgamecontent .imageitems .item:last-child{
+		margin-bottom: 0;
+	}
+
+	.snailgame .snailgamecontent .leftside{
+		width: 100%;
+	}
+	.snailgame .snailgamecontent .rightside{
+		width: 100%;
+		padding-left: 0;
+	}
+	.snailgame .snailgamecontent .h3{
+		padding-top: 20px;
+	}
+	.snailgame .snailgamecontent .pointsitems{
+		padding-top: 30px;
+	}
+	.snailgame .snailgamecontent .pointsitems .item{
+		width: 100% !important;
+		text-align: center;
+		padding-left: 0 !important;
+	}
+	.snailgame .snailgamecontent .pointsitems .item ul{
+		padding-left: 15px;
+	}
+	.snailgame .snailgamecontent .pointsitems .item:last-child h3{
+		padding-top: 25px;
+	}
+
+
+
+	.roadmap{
+		padding-top: 30px;
+		padding-bottom: 50px;
+		background-image: url('../images/roadmapmob.png');
+	}
+	.roadmap .locationitems{
+		padding-top: 30px;
+	}
+
+
+	.traitparity{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.traitparity .traitparityinner{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.traitparity .parityleft{
+		width: 100%;
+		padding-right: 0;
+	}
+	.traitparity .parityright{
+		display: none;
+	}
+	.traitparity .sectionheading h2{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.traitparity .parityleft .mobimg{
+		display: block;
+		margin-top: 50px;
+	}
+	.traitparity ul{
+		margin-top: 50px;
+	}
+
+	.faqs{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.faqs .faqsitems{
+		padding-top: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.faqs .faqsitems .item{
+		margin-bottom: 19px;
+	}
+	.faqs .faqsitems .item a{
+		font-size: 16px;
+		padding: 10px 20px;
+		text-align: center;
+		line-height: 25px;
+	}
+	.faqs .faqsitems .item a img{
+		width: 22px;
+		position: relative;
+		top: 3px;
+	}
+	.faqs .faqsitems .item a span{
+		float: left;
+		width: 85%;	
+	}
+
+
+	.team .teamitems{
+		padding-top: 30px;
+	}
+	.team .teamitems h3{
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	.team .teamitems h4{
+		font-size: 18px;
+	}
+	.team .teamitems .item{
+		margin-bottom: 50px;
+	}
+	.team .teamitems .item:last-child{
+		margin-bottom: 0;
+	}
+
+	.sociallinks ul li{
+		margin: 0 15px;
+	}
+	.sociallinks ul li img{
+		width: 25px;
+	}
+
+	.faqs .modal-dialog{
+		top: 20%;
+	}
+	.faqs .modal-content {
+		border-radius: 65px;
+		padding: 15px 20px;
+	}
+	.faqs .modal-body p{
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width:350px) {
+	.herobanner .welcomeconteent .content h1{
+		font-size: 28px;
+	}
+}
+
+
+@media (max-width:320px) {
+
+}
