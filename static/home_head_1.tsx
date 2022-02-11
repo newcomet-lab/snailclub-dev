@@ -625,5 +625,27 @@ const html = `
 
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/s3c/css/responsive.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rowdies:300,400,500,600,700" />
+<style>
+    .header .menus-1 {
+        float: left;
+        width: 40%;
+        text-align: right;
+        padding-top: 30px;
+        position: relative;
+    }
+    .header .menus-2 {
+        float: left;
+        width: 10%;
+        text-align: left;
+        padding-top: 30px;
+        position: relative;
+    }
+    .c-wallet-flex {
+        display: flex;
+    }
+    .header .menus .wallet {
+        width: 225px;
+    }
+</style>
 `;
 export default html;

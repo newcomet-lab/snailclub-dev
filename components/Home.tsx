@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Head from "next/head";
+import Link from 'next/link';
 
 import styled from "styled-components";
 import { Container, Snackbar } from "@material-ui/core";
@@ -28,6 +29,13 @@ import { AlertState } from "../helpers/utils";
 import { MintButton } from "./MintButton";
 import { PhaseHeader } from "./PhaseHeader";
 import { GatewayProvider } from "@civic/solana-gateway-react";
+
+import home_head_1 from '../static/home_head_1';
+import home_footer_1 from '../static/home_footer_1';
+import home_section_1 from '../static/home_section_1';
+import home_section_2 from '../static/home_section_2';
+import home_section_3 from '../static/home_section_3';
+import home_section_4 from '../static/home_section_4';
 
 const MintContainer = styled.div``; // add your styles here
 
@@ -181,7 +189,7 @@ const Home = (props: HomeProps) => {
       const notDisabled =
         "font-monstmedium text-4xl w-2/3 mx-auto mt-6 h-20 rounded-lg bg-pink-500 text-white";
       return (
-        <div className="flex flex-col mt-32 justify-center">
+        <div className="flex flex-col mt-10 mb-10 justify-center">
           <Container maxWidth="xs" style={{ position: "relative" }}>
             <Paper
               style={{
@@ -257,27 +265,49 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <Head>
-        <title>fill in</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/images/favicon.ico" />
+        <title>S3C</title>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
       </Head>
 
-      <div id="header" className="w-full z-10 absolute top-0 ">
-        <div>
-          <div className="container mx-auto flex justify-between items-center px-4 h-14 lg:h-16 ">
-            <div className="hidden lg:flex items-center w-full " id="links">
-              <div className="flex lg:flex-row flex-col">
-                <div className="mt-3 ml-3 lg:flex hidden">
-                  <WalletMultiButton />
-                </div>
-              </div>
+      <div dangerouslySetInnerHTML={{__html: home_head_1}} />
+
+      <div dangerouslySetInnerHTML={{__html: home_section_1}} />
+
+      <div dangerouslySetInnerHTML={{__html: home_section_4}} />
+
+      <div className="header fadeInDown wow">
+        <div className="col-md-12">
+          <div className="logo">
+            <Link href="/">
+              <a>
+                <img src="/wp-content/themes/s3c/images/logo_white.png" alt=""/>
+              </a>
+            </Link>
+          </div>
+          <div className="menus menus-1">
+            <div style={{display:'inline-block', textAlign: 'right'}}>
+            <WalletMultiButton className={`wallet c-wallet-flex`} />
             </div>
+          </div>
+          <div className="menus menus-2">
+            <div dangerouslySetInnerHTML={{__html: home_section_3}} />
           </div>
         </div>
       </div>
 
       <div className="bg-container">
-        <Container style={{ marginTop: 100 }}>
+        <Container>
           {candyMachineGoLive && wallet.connected && (
             <Countdown
               date={isSPLExists ? 1640199600000 : candyMachineGoLive}
@@ -285,12 +315,12 @@ const Home = (props: HomeProps) => {
             />
           )}
           {!candyMachine && wallet.connected && (
-            <div className="text-white text-center mt-36 mb-6 text-2xl">
+            <div className="text-center mt-36 mb-6 text-2xl">
               Loading
             </div>
           )}
           {!wallet.connected && (
-            <div className="text-white font-sans text-center text-4xl mt-36">
+            <div className="font-sans text-center text-4xl mt-36">
               Please connect wallet
             </div>
           )}
@@ -308,6 +338,10 @@ const Home = (props: HomeProps) => {
           </Snackbar>
         </Container>
       </div>
+
+      <div dangerouslySetInnerHTML={{__html: home_section_2}} />
+
+      <div dangerouslySetInnerHTML={{__html: home_footer_1}} />
     </>
   );
 };
