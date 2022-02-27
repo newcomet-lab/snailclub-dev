@@ -1,5 +1,4 @@
 import * as anchor from "@project-serum/anchor";
-import Typography from "@material-ui/core/Typography";
 import { CandyMachineAccount } from "../helpers/candy-machine";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import useWalletBalance from "../hooks/useWalletBalance";
@@ -33,53 +32,29 @@ export const DarkContainer = ({
   const balance = useWalletBalance()[0].toFixed(2);
   if (mintInfo) {
     return (
-      <div
-        className="lg:m-2 m-1 lg:p-5 p-2"
-        style={{
-          display: "flex",
-          alignContent: "center",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "#384457",
-          color: "white",
-          borderRadius: 5,
-          fontWeight: "bold",
-          fontSize: 18,
-        }}
-      >
-        <div className="flex flex-col mr-4">
-          <div>Price</div>
-          <div className="text-l font-normal">
+      <div className="box">
+        <div className="halfbox">
+          <h4>Price</h4>
+          <span>
             {whiteList && discountPrice
               ? discountPrice / LAMPORTS_PER_SOL
               : normalPrice / LAMPORTS_PER_SOL}
-            &nbsp; SOL
-          </div>
+          </span>
+          <span>SOL</span>
         </div>
-        <div className="flex flex-col">
-          <div>Balance</div>{" "}
-          <div className="text-l font-normal">{balance} &nbsp; SOL</div>
+        <div className="halfbox">
+          <h4>Balance</h4>
+          <span>{balance}</span>
+          <span>SOL</span>
         </div>
       </div>
     );
   } else {
     return (
-      <div
-        className="lg:m-2 m-1 lg:p-5 p-2"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignContent: "center",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "#384457",
-          color: "white",
-          borderRadius: 5,
-          fontWeight: "bold",
-          fontSize: 18,
-        }}
-      >
-        {text}
+      <div className="box">
+        <h4>
+          {text}
+        </h4>
       </div>
     );
   }
@@ -95,21 +70,10 @@ const Header = (props: {
 }) => {
   const { phaseName, desc, date, status, whiteList, candyMachine } = props;
   return (
-    <div>
-      <div>
-        <Typography
-          variant="h5"
-          style={{ fontWeight: 600 }}
-          className="text-white"
-        >
-          &nbsp; {phaseName} &nbsp;
-          ({candyMachine?.state.itemsRedeemed}/{candyMachine?.state.itemsAvailable})
-        </Typography>
-        <Typography variant="body1" color="textSecondary">
-          {desc}
-        </Typography>
-      </div>
-      <div className="flex flex-row">
+    <>
+      <h3>{phaseName} &nbsp; ({candyMachine?.state.itemsRedeemed}/{candyMachine?.state.itemsAvailable})</h3>
+      <h3>{desc}</h3>
+      <div className="innerbox">
         <DarkContainer text={status} />
         <DarkContainer
           text={``}
@@ -118,7 +82,7 @@ const Header = (props: {
           candyMachine={candyMachine}
         />
       </div>
-    </div>
+    </>
   );
 };
 

@@ -18,13 +18,13 @@ const html = `
                     <div class="rightside">
                         <div class="imageitems">
                             <div class="item">
-                                <img src="/wp-content/uploads/2022/01/square.png" alt="">
+                                <img src="/wp-content/uploads/2022/02/example-13.png" alt="">
                             </div>
                             <div class="item">
-                                <img src="/wp-content/uploads/2022/01/square.png" alt="">
+                                <img src="/wp-content/uploads/2022/02/Example-9.png" alt="">
                             </div>
                             <div class="item">
-                                <img src="/wp-content/uploads/2022/01/square.png" alt="">
+                                <img src="/wp-content/uploads/2022/02/Example-11.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -83,11 +83,22 @@ const html = `
                             <img src="/wp-content/themes/s3c/images/location.png" alt="">
                         </div>
                         <div class="info">
-                            <p>Q1-2022
-                                1. Build out Initial game
-                                2. First Mint/ Snail Games begin
-                                3. Full Series released and winners are announced
-                                4. Victory Barnicles and prizes are airdropped!
+                            <p>Q3 2021<br />
+                                <br />
+                                Artwork for Snails (Finished)<br />
+                                <br />
+                                Q4 2021<br />
+                                <br />
+                                Generate 8,888 different Silly Snails (Finished)<br />
+                                Plan Snail Games (Finished)<br />
+                                Build Snail Game 1 (Finished)<br />
+                                <br />
+                                Q1 2022<br />
+                                <br />
+                                Listed on Magic Eden<br />
+                                Pre-sale and whitelist<br />
+                                Snail Minting<br />
+                                Snail Games begin<br />
                             </p>
                         </div>
                     </div>
@@ -96,11 +107,14 @@ const html = `
                             <img src="/wp-content/themes/s3c/images/location.png" alt="">
                         </div>
                         <div class="info">
-                            <p>Q2-2022
-                                1. Hire experienced game developers to help build out The Snails Games 2.
+                            <p>Q2-2022<br />
+                                <br />
+                                1. Hire experienced game developers to help build out The Snails Games 2.<br />
+                                <br />
                                 2.Build out play to win PVC games to allow Snails to be utilized outside of the
-                                Snail Games
-                                3. Hold First Escargatorie in person event!
+                                Snail Games<br />
+                                <br />
+                                3. Hold First Escargatorie in person event!<br />
                             </p>
                         </div>
                     </div>
@@ -109,11 +123,14 @@ const html = `
                             <img src="/wp-content/themes/s3c/images/location.png" alt="">
                         </div>
                         <div class="info">
-                            <p>Q3-2022
+                            <p>Q3-2022<br />
+                                <br />
                                 1. Introduce new gameplay along with updated contract. Snails now risk damage in the
                                 snail games and have the option to compete for "Barnicle Rights", less risk less
-                                reward.
-                                2. Introduce community staking, fractional ownership.</p>
+                                reward.<br />
+                                <br />
+                                2. Introduce community staking, fractional ownership.
+                            </p>
                         </div>
                     </div>
                 </div>

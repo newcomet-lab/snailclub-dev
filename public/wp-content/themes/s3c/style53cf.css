@@ -66,9 +66,10 @@ img{
 	position: relative;
 }
 .header .menus .wallet{
+	display: inline-block;
 	background-color: #fff;
 	width: 218px;
-	padding: 10px 15px;
+	padding: 10px 0;
 	text-align: center;
 	font-family: Rowdies;
 	font-style: normal;
@@ -190,6 +191,12 @@ img{
 	padding-top:15px;
 }
 
+.herobanner .weelcomeslider img{
+	
+	width: 100%;
+	
+}
+
 .herobanner{
 	animation: zoom-in-zoom-out 2s ease;
 }
@@ -214,6 +221,8 @@ img{
 	background-size: 100% 100%;
 	padding-top: 80px;
 	padding-bottom: 80px;
+	/* margin-top: -165px; */
+	margin-top: 0;
 }
 
 
@@ -228,6 +237,7 @@ img{
 	font-size: 48px;
 	line-height: 60px;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .snailgame .snailgamecontent{
@@ -547,4 +557,166 @@ img{
 .sociallinks ul li{
 	display: inline-block;
 	margin: 0 20px;
+}
+
+
+
+.main-container{
+	float: left;
+	width: 100%;
+	background: #0ff;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-top: -170px;
+}
+
+
+
+
+
+
+.bgcolorheader{
+	background-image: url('images/welcome.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+.otherpagecontent{
+	float: left;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #0ff;
+	margin-top: 190px;
+}
+
+
+.countdown ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.countdown li {
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.countdown li span {
+	display: block;
+	font-size: 4.5rem;
+	color: #fff;
+}
+
+
+
+.mintinfoinner{
+	margin: 0 auto;
+	max-width: 500px;
+}
+.mintinfobox{
+	float: left;
+	width: 100%;
+	background-color: #151a1f;
+	padding: 25px;
+	border-radius: 10px;
+}
+.mintinfobox h3{
+	float: left;
+	width: 100%;
+	color: #fff;
+	font-family: Rowdies;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.mintinfobox .innerbox{
+	float: left;
+	width: 100%;
+}
+.mintinfobox .innerbox .box{
+	float: left;
+	width: 49%;
+	background-color: #384457;
+	border-radius: 10px;
+	color: #fff;
+	font-family: Rowdies;
+	padding: 15px;
+}
+.mintinfobox .innerbox .box h4{
+	font-size: 20px;
+}
+.mintinfobox .innerbox .box:first-child{
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+.mintinfobox .innerbox .box:last-child{
+	float: right;
+}
+.mintinfobox .innerbox .box .halfbox{
+	float: left;
+	width: 50%;
+}
+.mintinfobox .innerbox .box .halfbox h4{
+	font-size: 20px;
+}
+.mintinfobox .innerbox .box .halfbox span{
+	float: left;
+	width: 100%;
+	font-weight: 300;
+}
+.mintinfobox button{
+	float: left;
+	width: 100%;
+	background-color: #7243ea;
+	padding: 18px 0;
+	text-align: center;
+	color: #fff;
+	font-family: Rowdies;
+	border: none;
+	margin-top: 15px;
+}
+
+
+.publicsaleinfo .box:first-child{
+	width: 18%;
+}
+.publicsaleinfo .box:last-child{
+	width: 50%;
+	float: left !important;
+	margin-left: 10px;
+}
+
+
+@media all and (max-width: 768px) {
+
+	.bgcolorheader{
+		padding-bottom: 15px;
+	}
+	.otherpagecontent{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 90px;
+	}
+	.countdown li {
+	  font-size: 12px;
+	  padding: .75rem;
+	}
+	.countdown li span {
+	  font-size: 20px;
+	}
+	.mintinfobox h3{
+		font-size: 20px;
+	}
+	.mintinfobox .innerbox .box{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.mintinfobox .innerbox .box br{
+		display: block;
+	}
+	.publicsaleinfo .box:last-child{
+		margin-left: 0;
+	}
 }
